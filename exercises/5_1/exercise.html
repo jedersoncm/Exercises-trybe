@@ -52,12 +52,11 @@
  (06)Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
 
-          let ex01 = document.getElementsByTagName("p")[0]
-          ex01.innerText = "Trabalhando como Dev FullStack Jr"
+          document.getElementsByTagName("p")[0].innerText = "Trabalhando como Dev FullStack Jr";
           document.getElementsByClassName("main-content")[0].style.backgroundColor = "#0fa36b";
           document.getElementsByClassName("center-content")[0].style.backgroundColor = "white";
-          let ex04 = document.getElementsByClassName("title")[0];
-          ex04.innerText = "Exercício 5.1 - JavaScript";
+          document.getElementsByClassName("title")[0].innerText = "Exercício 5.1 - JavaScript";
+          //document.getElementsByTagName("p")[0].innerText = document.getElementsByTagName("p")[0].innerText.toUpperCase();
           let ex05 = document.getElementsByTagName("p")[0];
           ex05.innerText = ex05.innerText.toUpperCase();
           console.log(document.getElementsByTagName("p"));
