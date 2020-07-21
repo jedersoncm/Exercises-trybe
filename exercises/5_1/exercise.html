@@ -51,15 +51,42 @@
  (05)Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
  (06)Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
+          function ex01(){
+            document.getElementsByTagName("p")[0].innerText = "Trabalhando como Dev FullStack Jr";
+          }
+          function ex02(){
+            document.getElementsByClassName("main-content")[0].style.backgroundColor = "#0fa36b";
 
-          document.getElementsByTagName("p")[0].innerText = "Trabalhando como Dev FullStack Jr";
-          document.getElementsByClassName("main-content")[0].style.backgroundColor = "#0fa36b";
-          document.getElementsByClassName("center-content")[0].style.backgroundColor = "white";
-          document.getElementsByClassName("title")[0].innerText = "Exercício 5.1 - JavaScript";
-          //document.getElementsByTagName("p")[0].innerText = document.getElementsByTagName("p")[0].innerText.toUpperCase();
-          let ex05 = document.getElementsByTagName("p")[0];
-          ex05.innerText = ex05.innerText.toUpperCase();
-          console.log(document.getElementsByTagName("p"));
+          }
+          function ex03(){
+            document.getElementsByClassName("center-content")[0].style.backgroundColor = "white";
+
+          }
+          function ex04(){
+            document.getElementsByClassName("title")[0].innerText = "Exercício 5.1 - JavaScript";
+
+          }
+          function ex05(){
+            for (let i = 0 ; i < document.getElementsByTagName("p").length ; i += 1){
+              //let aux = document.getElementsByTagName("p")[i];
+              document.getElementsByTagName("p")[i].innerText = document.getElementsByTagName("p")[i].innerText.toUpperCase();
+            }
+            
+            //let ex05 = document.getElementsByTagName("p")[0];
+            //ex05.innerText = ex05.innerText.toUpperCase();
+
+          }
+          function ex06(){
+            console.log(document.getElementsByTagName("p"));
+
+          }
+          ex01();
+          ex02();
+          ex03();
+          ex04();
+          ex05();
+          ex06();
+
 
     </script>
   </body>
