@@ -57,10 +57,68 @@
   </head>
   <body>
     <script>
-      // COLOQUE SEU CÓDIGO AQUI
-      let title = document.createElement("h1");
+      // exercício 01
+      let title = document.createElement('h1');
       title.innerHTML = "Exercício 5.2 - JavaScript DOM";
       document.getElementsByTagName("body")[0].appendChild(title);
+
+      //exercício 02
+
+      let contPrinc = document.createElement("div");
+      contPrinc.className = 'main-content'
+      //let text = document.createTextNode('Testando exercício 02');
+      //contPrinc.appendChild(text);
+      document.body.appendChild(contPrinc);
+
+      //exercício 03
+
+      let aux = document.createElement("div");
+      aux.className = 'center-content';
+      document.querySelector(".main-content").appendChild(aux);
+
+      //exerício 04
+
+      let aux2 = document.createElement('p');
+      aux2.innerHTML = 'texto texto texto texto texto';
+      document.querySelector('.center-content').appendChild(aux2);
+
+      //exercício 05
+
+      let aux3 = document.createElement('div');
+      aux3.className = 'left-content';
+      document.querySelector(".main-content").appendChild(aux3);
+
+      //exercício 06
+
+      let aux4 = document.createElement('div');
+      aux4.className = 'right-content';
+      document.querySelector(".main-content").appendChild(aux4);
+
+      //exercício 07
+
+      let aux5 = document.createElement('img');
+      aux5.className = 'small-image';
+      aux5.src = 'https://picsum.photos/200';
+      document.querySelector('.left-content').appendChild(aux5);
+
+      //exercício 08
+
+      let aux6 = document.createElement('ul');
+      document.querySelector('.right-content').appendChild(aux6);
+      let array = ['um', 'dois', 'três','quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+      for (let i in array){
+        let elementLi = document.createElement('li');
+        elementLi.innerHTML = array[i];
+        aux6.appendChild(elementLi);
+      } 
+
+      //exercício 09
+      for (let i = 0 ; i < 3 ; i += 1){
+        let elementH3 = document.createElement('h3');
+        document.querySelector(".main-content").appendChild(elementH3);
+      }
+
+
 
     </script>
   </body>
