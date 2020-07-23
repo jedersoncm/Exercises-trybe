@@ -118,8 +118,36 @@
         document.querySelector(".main-content").appendChild(elementH3);
       }
 
+      //parte 02
+      //exercício 01
 
+      document.querySelector('h1').className = 'title';
 
+      //exercício 02
+
+      let classH3 = document.querySelectorAll('h3');
+      for(let i = 0 ; i < classH3.length ; i += 1){
+        classH3[i].className = 'description';
+      }
+
+      //exercício 03
+
+      document.querySelector('.main-content').removeChild(aux3);
+
+      //exercício 04
+
+      aux4.style.marginRight = 'auto';
+
+      //exercício 05
+
+      document.querySelector('.center-content').parentElement.style.backgroundColor = 'green';
+
+      //exercício 06
+
+      for (let i = 0 ; i < 2 ; i += 1){
+        document.querySelector('ul').removeChild(document.querySelector('ul').lastElementChild);
+      }
+      
     </script>
   </body>
 </html>
