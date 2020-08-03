@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <form action="" method="get" class="form">
+    <fieldset>
+      <legend>Dados Pessoais</legend>
+      <label >Nome: <input type="text" maxlength="40" required='required' id="nome"></label><br>
+      <label >Email: <input type="text" maxlength="50" required='required' id="email"></label><br>
+      <label >CPF: <input type="text" maxlength="11" required='required' id="cpf"></label><br>
+      <label >Endereço: <input type="text" maxlength="200" required='required' id="endereco"></label><br>
+      <label >Cidade: <input type="text" maxlength="28" required='required' id="cidade"></label><br>
+      <label for="estados" >Estado: </label>
+        <select class="estados" id="estados">
+        </select><br>
+      <label for="casa"><input name="moradia" type="radio" id='casa'>Casa</label>
+      <label for="apartamento"><input name="moradia" type="radio" id="apartamento">Apartamento</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Dados Profissionais</legend>
+      
+      <label for="resumo">Resumo do curriculo:</label>
+      <textarea name="resumo" id="resumo"  maxlength="1000" required='required'></textarea><br>
+
+      <label for="cargo">Cargo: </label>
+      <input type="text" name="cargo" id="cargo" maxlength="40" required='required'><br>
+
+      <label for="descricao">Descrição do cargo: </label>
+      <input type="text" name="descricao" id="descricao" maxlength="40" required='required'><br>
+
+      <label for="date">Data de inicio: </label>
+      <input type="text" name="date" id="date" required='required'>
+
+    </fieldset>
+
+    <input type="submit" value="Enviar">
+</form>
+
+<div class="output"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
