@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bulma.min.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <form action="" method="get" id="form">
+    
+    <div>Dados Pessoais</div>
+    <div class="field">
+      <label class="label">Nome: </label>
+      <div class="control">
+        <input class="input" type="text" maxlength="40" required='required' id="nome">
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Email: </label>
+      <div class="control">
+        <input class="input" type="text" maxlength="50" required='required' id="email">
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">CPF: </label>
+      <div class="control">
+        <input class="input" type="text" maxlength="11" required='required' id="cpf">
+      </div>
+    </div>
+    
+    <div class="field">
+      <label class="label">Endereço: </label>
+      <div class="control">
+        <input class="input" type="text" maxlength="200" required='required' id="endereco">
+      </div>
+    </div>
+    
+    <div class="field">
+      <label class="label">Cidade: </label>
+      <div class="control">
+        <input class="input" type="text" maxlength="28" required='required' id="cidade">
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label" for="estados" >Estado: </label>
+      <div class="control">
+        <div class="select is-medium">
+          <select id="estados">
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="control">
+        
+        <label class="radio" for="casa">
+          <input name="moradia" type="radio" id='casa'>
+          Casa
+        </label>
+        <label class="radio" for="apartamento">
+          <input name="moradia" type="radio" id="apartamento">
+          Apartamento
+        </label>
+      
+      </div>
+    </div>
+  
+
+  
+    <div>Dados Profissionais</div>
+    
+    <div class="field">
+      <label class="label" for="resumo">Resumo do curriculo:</label>
+      <div class="control">
+        <textarea class="textarea" name="resumo" id="resumo"  maxlength="1000" required='required'></textarea>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label" for="cargo">Cargo: </label>
+      <div class="control">
+        <input class="input" type="text" name="cargo" id="cargo" maxlength="40" required='required'><br>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label" for="descricao">Descrição do cargo: </label>
+      <div class="control">
+        <input class="input" type="text" name="descricao" id="descricao" maxlength="40" required='required'><br>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label" for="date">Data de inicio: </label>
+      <div class="control">
+        <input class="input" type="text" name="date" id="date" required='required'>
+      </div>
+    </div>
+    <div class="field">
+      <div class="control">
+        <button class="button is-success is-light" type="submit">Enviar</button>
+      </div>
+      <div class="control">
+        <button class="button is-danger">Limpar</button>
+      </div>
+    </div>
+      
+ 
+</form>
+
+<div class="output"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
