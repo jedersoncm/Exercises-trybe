@@ -1,0 +1,38 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+header p, h1 , h2 {
+  text-align: center;
+}
+body {
+  margin: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .asides-container{
+    display: flex;
+    justify-content: space-around;
+    
+  }
+
+  header p {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    display: inline-block;
+  }
+
+  .main-content {
+    margin: 20px;
+  }
+}
