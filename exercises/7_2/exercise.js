@@ -74,3 +74,37 @@ const verifyPair = (obj, key, value) => {
   return false;
 }
 //console.log(verifyPair(lesson1, 'turno', 'manhã'));
+
+//exercício bônus 01
+const mathStudents = obj => {
+  let result = 0;
+  const array = Object.keys(obj);
+  for (i in array){
+    if (obj[array[i]].materia === 'Matemática'){
+      result += obj[array[i]].numeroEstudantes;
+    }
+  }
+  return result;
+}
+//console.log(mathStudents(allLessons));
+
+//exercício bônus 02
+const createReport = (obj, teacher) => {
+  let students = 0;
+  const lessons = []
+  const array = Object.values(obj);
+  for (i in array) {
+    if (array[i].professor === teacher){
+      lessons.push(array[i].materia);
+      students += array[i].numeroEstudantes;
+    }
+  }
+  const result = {
+    professor : teacher,
+    aulas: lessons,
+    estudantes: students,
+  }
+  return result;
+}
+//console.log(createReport(allLessons, 'Maria Clara'));
+console.log(lesson1.length);
