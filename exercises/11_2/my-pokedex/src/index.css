@@ -1,0 +1,26 @@
+body {
+  text-align: center;
+}
+
+.container {
+  margin: auto;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  border: 3px solid red;
+  width: 45%;
+  min-width: 200px;
+  border-radius: 30px;
+  flex-wrap: nowrap;
+}
+
+.itemPokemon {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  margin: auto;
+}
+
+.data {
+  padding-top: 20px;
+}
